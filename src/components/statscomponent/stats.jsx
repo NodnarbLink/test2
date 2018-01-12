@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import '../../assets/css/jquery.dataTables.css'
+import '../../assets/css/jquery.dataTables.css';
+import '../../assets/css/dataTables.bootstrap4.css';
+
+
 
 
 

@@ -46,11 +46,19 @@ table.dataTable {
     border-spacing: 0
 }
 
+/* THIS CONTROLS THE COLOR OF THE TITLES and arrows!!! */
+/* THIS CONTROLS THE COLOR OF THE TITLES and arrows!!! */
+/* THIS CONTROLS THE COLOR OF THE TITLES and arrows!!! */
+
 table.dataTable thead th,
 table.dataTable tfoot th {
     font-size: 1.3em;
-    color: #348ec4
+    color: #f16627
 }
+
+/* THIS CONTROLS THE COLOR OF THE TITLES and arrows!!! */
+/* THIS CONTROLS THE COLOR OF THE TITLES and arrows!!! */
+/* THIS CONTROLS THE COLOR OF THE TITLES and arrows!!! */
 
 table.dataTable thead th,
 table.dataTable thead td {
@@ -422,7 +430,7 @@ table.dataTable td {
 }
 
 .dataTables_wrapper .dataTables_filter input {
-    background-color: #141313;
+    background-color: ;
     border: none;
     margin-left: 0.5em;
     -moz-box-shadow: inset 0 0 10px #000000;
@@ -437,6 +445,7 @@ table.dataTable td {
 }
 
 .dataTables_wrapper .dataTables_paginate {
+
     float: right;
     text-align: right;
     padding-top: 0.25em
@@ -452,23 +461,56 @@ table.dataTable td {
     text-decoration: none !important;
     cursor: pointer;
     *cursor: hand;
-    color: #348ec4 !important;
+    color: #F16323 !important;
     border: 1px solid transparent;
     border-radius: 2px
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
-.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    color: #348ec4 !important;
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+ {
+    color: #f26b2e !important;
     border: 1px solid #000;
     background-color: #6f6f6f;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6f6f6f), color-stop(100%, #282828));
-    background: -webkit-linear-gradient(top, #6f6f6f 0%, #282828 100%);
-    background: -moz-linear-gradient(top, #6f6f6f 0%, #282828 100%);
-    background: -ms-linear-gradient(top, #6f6f6f 0%, #282828 100%);
-    background: -o-linear-gradient(top, #6f6f6f 0%, #282828 100%);
-    background: linear-gradient(to bottom, #6f6f6f 0%, #282828 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f26b2e), color-stop(100%, #f26b2e));
+    background: -webkit-linear-gradient(top, #f26b2e 0%, ##f26b2e 100%);
+    background: -moz-linear-gradient(top, #f26b2e 0%, ##f26b2e 100%);
+    background: -ms-linear-gradient(top, #f26b2e 0%, ##f26b2e 100%);
+    background: -o-linear-gradient(top, #f26b2e 0%, ##f26b2e 100%);
+    background: linear-gradient(to bottom, #f26b2e 0%, ##f26b2e 100%)
 }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+{
+
+}
+
+a.page-link,
+a.page-link:hover,
+a.page-link:active
+  {
+  color: #f26b2e;
+  border-color: #f26b2e;
+  }
+
+/*controls color in middle of the active page button*/
+
+  .page-item.active .page-link {
+      z-index: 2;
+      color: #fff;
+      background-color: #f26b2e;
+      border-color: #f26b2e;
+    }
+
+    .page-link:focus, .page-link:hover {
+        color: #f26b2e;
+        text-decoration: none;
+        background-color: #eceeef;
+        border-color: #ddd;
+    }
+
+
+
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
@@ -482,25 +524,25 @@ table.dataTable td {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
     color: white !important;
-    border: 1px solid #348ec4;
-    background-color: #a1cce6;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1cce6), color-stop(100%, #348ec4));
-    background: -webkit-linear-gradient(top, #a1cce6 0%, #348ec4 100%);
-    background: -moz-linear-gradient(top, #a1cce6 0%, #348ec4 100%);
-    background: -ms-linear-gradient(top, #a1cce6 0%, #348ec4 100%);
-    background: -o-linear-gradient(top, #a1cce6 0%, #348ec4 100%);
-    background: linear-gradient(to bottom, #a1cce6 0%, #348ec4 100%)
+    border: 1px solid #F16323;
+    background-color: #F16323;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F16323), color-stop(100%, #F16323));
+    background: -webkit-linear-gradient(top, #f26b2e 0%, #F16323 100%);
+    background: -moz-linear-gradient(top, #f26b2e 0%, #F16323 100%);
+    background: -ms-linear-gradient(top, #f26b2e 0%, #F16323 100%);
+    background: -o-linear-gradient(top, #f26b2e 0%, #F16323 100%);
+    background: linear-gradient(to bottom, #f26b2e 0%, #F16323 100%)
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:active {
     outline: none;
-    background-color: #58a5d3;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #58a5d3), color-stop(100%, #3288bc));
-    background: -webkit-linear-gradient(top, #58a5d3 0%, #3288bc 100%);
-    background: -moz-linear-gradient(top, #58a5d3 0%, #3288bc 100%);
-    background: -ms-linear-gradient(top, #58a5d3 0%, #3288bc 100%);
-    background: -o-linear-gradient(top, #58a5d3 0%, #3288bc 100%);
-    background: linear-gradient(to bottom, #58a5d3 0%, #3288bc 100%);
+    background-color: #F16323;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f26b2e), color-stop(100%, #f26b2e));
+    background: -webkit-linear-gradient(top, #f26b2e 0%, #f26b2e 100%);
+    background: -moz-linear-gradient(top, #f26b2e 0%, #f26b2e 100%);
+    background: -ms-linear-gradient(top, #f26b2e 0%, #f26b2e 100%);
+    background: -o-linear-gradient(top, #f26b2e 0%, #f26b2e 100%);
+    background: linear-gradient(to bottom, #f26b2e 0%, #f26b2e 100%);
     box-shadow: inset 0 0 3px #111
 }
 
@@ -536,7 +578,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
-    color: #348ec4
+    color: #F16323
 }
 
 .dataTables_wrapper .dataTables_scroll {
