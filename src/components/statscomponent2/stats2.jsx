@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import '../../assets/css/jquery.dataTables.css';
-import '../../assets/css/dataTables.bootstrap4.css';
 
+import '../../assets/css/default.min.css';
 
-
-
-
-class INSstats extends Component {
+class INSstats2 extends Component {
   render() {
     return (
     <div className="container">
-      <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+      <table id="example" className="display dataTable no-footer" cellspacing="0" width="100%">
+
           <thead>
               <tr>
-                  <th>Name</th>
+                  <th align="center">Name</th>
                   <th>Elo</th>
                   <th>Wins</th>
                   <th>Losses</th>
@@ -22,17 +19,7 @@ class INSstats extends Component {
                   <th>Objectives</th>
               </tr>
           </thead>
-          <tfoot>
-              <tr>
-                  <th>Name</th>
-                  <th>Elo</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                  <th>Kills</th>
-                  <th>Deaths</th>
-                  <th>Objectives</th>
-              </tr>
-          </tfoot>
+
           <tbody>
               <tr>
                   <td>Tiger Nixon</td>
@@ -257,4 +244,4 @@ class INSstats extends Component {
   }
 }
 
-export default INSstats;
+export default INSstats2;

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import INSstats from './components/statscomponent/stats.jsx';
+
+import INSstats2 from './components/statscomponent2/stats2.jsx';
+import './assets/css/default.min.css';
 
 class App extends Component {
   render() {
@@ -16,7 +18,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <INSstats />
+
+        <INSstats2 />
       </div>
     );
   }
